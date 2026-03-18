@@ -504,7 +504,7 @@ function Card({
           className="sprite-img"
           src={spriteUrl(p.id)}
           alt={p.name}
-          style={{ width: 80, height: 80, imageRendering: "pixelated", position: "relative", zIndex: 1 }}
+          style={{ width: 150, height: 150, imageRendering: "pixelated", position: "relative", zIndex: 1 }}
           onError={(e) => {
             (e.target as HTMLImageElement).src = spriteFallback(p.id);
           }}
@@ -669,7 +669,7 @@ function Modal({ p, onClose }: { p: Pokemon; onClose: () => void }) {
                 className="modal-sprite float-anim"
                 src={spriteUrl(p.id)}
                 alt={p.name}
-                style={{ width: 100, height: 100, imageRendering: "pixelated", position: "relative", zIndex: 1 }}
+                style={{ width: 150, height: 150, imageRendering: "pixelated", position: "relative", zIndex: 1 }}
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = spriteFallback(p.id);
                 }}
